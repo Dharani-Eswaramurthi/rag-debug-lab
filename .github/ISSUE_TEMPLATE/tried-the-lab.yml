@@ -1,0 +1,42 @@
+name: Tried the lab
+description: One short result, including where you got stuck. No review required.
+title: "[Lab feedback] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        This is PUBLIC. Do not post email addresses, secrets, private code, or customer data.
+        For private feedback, email dharani96556@gmail.com instead.
+        No need to complete the exercise or say something positive.
+  - type: dropdown
+    id: attempt
+    attributes:
+      label: How far did you get?
+      options:
+        - Ran it and attempted my own fix
+        - Ran the supplied reference only
+        - Ran the starter but got stuck
+        - Could not get it running
+        - Only read it
+    validations:
+      required: true
+  - type: textarea
+    id: result
+    attributes:
+      label: Your result and one useful or confusing detail
+      description: Paste the RESULT line if available. What happened? No private logs needed.
+    validations:
+      required: true
+  - type: dropdown
+    id: experience
+    attributes:
+      label: Have you built a document chatbot before? (optional)
+      options:
+        - "Yes"
+        - "No"
+        - Prefer not to say
+  - type: textarea
+    id: next-problem
+    attributes:
+      label: What would you want to practise next? (optional)
+      description: An actual problem you encountered is more useful than a general feature wish.
