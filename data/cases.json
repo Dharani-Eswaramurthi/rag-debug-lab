@@ -1,0 +1,8 @@
+[
+  {"id": "basic-projects", "question": "How many projects can a Basic workspace contain?", "expected": "A workspace can contain up to 5 projects."},
+  {"id": "studio-projects", "question": "How many projects can a Studio workspace contain?", "expected": "A workspace can contain up to 50 projects."},
+  {"id": "enterprise-projects", "question": "How many projects can an Enterprise workspace contain?", "expected": "A workspace can contain up to 200 projects."},
+  {"id": "basic-exports", "question": "How many days are exports retained for Basic?", "expected": "Exports are retained for 2 days."},
+  {"id": "studio-exports", "question": "How many days are exports retained for Studio?", "expected": "Exports are retained for 14 days."},
+  {"id": "enterprise-exports", "question": "How many days are exports retained for Enterprise?", "expected": "Exports are retained for 90 days."}
+]
