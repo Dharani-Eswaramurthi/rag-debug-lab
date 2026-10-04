@@ -1,6 +1,6 @@
 # Why the heading mattered
 
-The source says Studio allows 50 projects. The broken output selects the Basic paragraph allowing 5. That is not an LLM hallucination in this exercise: no LLM is used. It is incorrect evidence selection before generation would start.
+The source says Studio allows 50 projects. The broken output selects the Basic paragraph allowing 5. The exercise prints a source passage directly; the failure is incorrect evidence selection before any answer generation.
 
 ## Reproduce both versions
 

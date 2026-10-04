@@ -10,7 +10,7 @@ Practise RAG debugging in a free, offline Python exercise: inspect a retrieval t
 
 [Start the exercise](#quick-start) · [Read without installing](#the-retrieval-failure-in-one-example) · [Hints](HINTS.md) · [Solution (spoiler)](SOLUTION.md) · [Contribute](CONTRIBUTING.md)
 
-This is **one deterministic retrieval exercise**, not a complete RAG chatbot. It uses word overlap instead of embeddings and prints a passage instead of calling an LLM. All documents, company names and questions are fictional. It makes no network calls and collects no telemetry.
+This is **one deterministic retrieval exercise**, not a complete RAG chatbot. It uses word overlap instead of embeddings and prints the selected source passage directly. All documents, company names and questions are fictional. It makes no network calls and collects no telemetry.
 
 ## Quick start
 
@@ -78,7 +78,7 @@ You can follow this example without installing anything.
 
 Read the [document](data/workspaces.md), inspect the [starter](chunking.py), predict a fix, then compare with the [explanation](SOLUTION.md). Storing heading metadata without searching it would not fix this example.
 
-The programme has returned a real passage from the source, but it belongs to the wrong workspace. There is no LLM in this exercise: the failure occurs in selecting evidence.
+The programme has returned a real passage from the source, but it belongs to the wrong workspace. The failure occurs in selecting evidence, before any answer generation.
 
 **Check your understanding:** would preserving headings make a question about a nonexistent workspace safe to answer? No. The retriever can still return an inappropriate passage. Explain what else would need to be checked before trusting an answer.
 
@@ -142,4 +142,4 @@ The **17 harness tests** are separate from the **six exercise checks**. The base
 
 The [Lab checks workflow](https://github.com/Dharani-Eswaramurthi/rag-debug-lab/actions/workflows/checks.yml) runs the harness on its configured Python/OS combinations. Its badge reports the workflow result; it does not measure learner understanding or production reliability.
 
-Version **0.1.0**. Created with AI assistance by **Dharani Eswaramurthi**. Code and fictional fixtures are available under the [MIT license](LICENSE).
+Version **0.1.0**. Created by **Dharani Eswaramurthi**. Code and fictional fixtures are available under the [MIT license](LICENSE).

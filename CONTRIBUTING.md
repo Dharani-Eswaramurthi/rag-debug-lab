@@ -28,7 +28,7 @@ Use the [bug-report form](https://github.com/Dharani-Eswaramurthi/rag-debug-lab/
 
 Preserve the fictional fixtures, avoid hardcoded workspace names in general parsing logic, and distinguish the automated harness from learner outcomes. Do not introduce network calls, telemetry, signup requirements or paid dependencies into this offline exercise.
 
-If AI helped with a contribution, explain its role and verify the submitted code, prose and references yourself. Do not claim learner testing or independent review unless it actually happened.
+Verify the submitted code, prose and references yourself. Do not claim learner testing or independent review unless it actually happened.
 
 ## Respect and privacy
 

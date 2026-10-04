@@ -29,7 +29,7 @@ def main() -> int:
     chunks = splitter((ROOT / "data" / "workspaces.md").read_text(encoding="utf-8"))
     cases = json.loads((ROOT / "data" / "cases.json").read_text(encoding="utf-8"))
     print(f"RAG Debug Lab {VERSION} | {selected_mode}")
-    print("Synthetic passage retrieval only; no LLM or network calls.\n")
+    print("Synthetic passage retrieval only; no answer generation or network calls.\n")
     if args.trace:
         for index, chunk in enumerate(chunks, 1):
             print(f"CHUNK {index} | heading: {chunk.heading or '(missing)'}\n  {chunk.text}")
